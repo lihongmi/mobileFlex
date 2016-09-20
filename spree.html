@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta name="apple-mobile-web-app-title" content="爱财有道">
+    <meta name="keywords" content="理财 达人 投资 互联网金融 个人理财 理财计划">
+    <meta name="description" content="爱财有道是由中信集团、百联集团、中国信贷、经纬创投与北汽集团共同投资的互联网金融平台，是你身边的智慧投资平台。">
+    <title></title>
+    <script src="scripts/mobile_flex.js"></script>
+    <link rel="stylesheet" href="styles/guidrp.css">
+</head>
+<body>
+<style>
+   html{
+       background-color: #22324c;
+   }
+</style>
+<div class="wrap">
+    <img class="bg-guid" src=images/bg-guid-01.jpg?v=1" alt="">
+    <input class="tel-guid" type="tel" placeholder="请输入手机号码领好礼">
+    <div class="tel-tip"></div>
+    <img src="images/btn-guid.png" alt="" class="btn-check">
+
+    <p class="rpcompany">深圳先行永信金融服务有限公司</p>
+</div>
+<script src="/assets/special/scripts/vendor/zepto.min.js"></script>
+<script>
+    $(function(){
+        function validatemobile(mobile){
+//            if(mobile.length==0)
+//            {
+//                alert('请输入手机号码！');
+//                document.form1.mobile.focus();
+//                return false;
+//            }
+//            if(mobile.length!=11)
+//            {
+//                alert('请输入有效的手机号码！');
+//                document.form1.mobile.focus();
+//                return false;
+//            }
+            var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+            if(!myreg.test(mobile)){
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+
+        $('.tel-guid').keyup(function(){
+            var mobile=$(this).val();
+            if(validatemobile(mobile)){
+                $('.tel-tip').html('');
+            }else{
+                $('.tel-tip').html('请输入有效的手机号码');
+            }
+        });
+        $('.btn-check').on('tap',function(){
+            var mobile=$('.tel-guid').val();
+            if(validatemobile(mobile)){
+                $('.btn-check').addClass('anm-rot');
+                $.ajax({
+                    //提交数据的类型 POST GET
+                    type:"GET",
+                    //提交的网址
+                    url:"/special/ajax_reward",
+                    //提交的数据
+                    data:{mobileNumber:mobile},
+                    cahe:false,
+                    //返回数据的格式
+                    datatype: "json",//"xml", "html", "script", "json", "jsonp", "text".
+                    //成功返回之后调用的函数
+                    success:function(){
+                       window.location.href='/special/spree2';
+                    },
+                    //调用执行后调用的函数
+                    complete: function(XMLHttpRequest, textStatus){
+                        //HideLoading();
+                    	window.location.href='/special/spree2';
+                    },
+                    //调用出错执行的函数
+                    error: function(){
+                        //请求出错处理
+                    	window.location.href='/special/spree';
+                    }
+                });
+            }else{
+                $('.tel-tip').html('请输入有效的手机号码');
+                return false;
+
+            }
+        })
+    })
+</script>
+</body>
+</html>

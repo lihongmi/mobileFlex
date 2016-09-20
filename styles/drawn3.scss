@@ -1,0 +1,44 @@
+@import "reset";
+@import "flex";
+
+.wrap {
+  position: relative;
+  width: px2rem(640px);
+  margin: 0 auto;
+  img{
+    display: block;
+  }
+  .sec1 {
+    height: px2rem(709);
+  }
+  .sec2 {
+    height: px2rem(354);
+  }
+  .sec3 {
+    height: px2rem(863);
+  }
+  .progress-w{
+    position: absolute;
+    right: px2rem(55);
+    top: px2rem(870);
+    left: px2rem(25);
+    height: px2rem(24);
+    background-color: #c51c3d;
+    border-radius: px2rem(15);
+    box-shadow: inset -1px -1px 1px #ad0a1c,
+    inset -3px 1px 1px #ad0a1c,
+    inset 2px -1px 1px #ad0a1c;
+  }
+
+  .progress-i{
+    height: 100%;
+    background:url("/assets/special/images/prom/rp.jpg") repeat-x #fd9d02;
+    border-radius: px2rem(15);
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+  }
+
+}

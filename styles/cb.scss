@@ -1,0 +1,63 @@
+//新手红包引导专题
+@import "reset";
+@import "flex";
+
+.gbinp {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: px2rem(80);
+  line-height: px2rem(80);
+  //padding: px2rem(20) 0;
+  border-radius: px2rem(60);
+  color: white;
+}
+.telsub {
+  border: 1px solid #143b71;
+  background-color: #ffa409;
+  text-align: center;
+  @include font-dpr(16px);
+}
+.cbwrap {
+  width: px2rem(640);
+  height: px2rem(1136);
+  background: url("/assets/special/images/cb/cb-bg-1.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: px2rem(660);
+  .telform {
+
+  }
+  .telinp {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: px2rem(60);
+    color: white;
+    background: url("/assets/special/images/cb/cb-ic-1.png") no-repeat px2rem(40) #052046;
+    background-size: px2rem(26);
+    margin-bottom: px2rem(50);
+    padding: px2rem(25) 0 px2rem(25) px2rem(80);
+    @include font-dpr(15px);
+  }
+
+  .alt-cb{
+    display: none;
+    width: px2rem(500);
+    text-align: center;
+    padding: px2rem(12) 0;
+    margin: px2rem(50) auto;
+    @include font-dpr(16px);
+    color: white;
+    background-color: #041c3d;
+    border-radius: px2rem(50);
+  }
+
+}
+.cbsuc{
+  width: px2rem(640);
+  height: px2rem(1136);
+  background: url("/assets/special/images/cb/cb-bg-2.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: px2rem(720);
+
+}

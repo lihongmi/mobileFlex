@@ -1,0 +1,322 @@
+//新手红包引导专题
+@import "reset";
+@import "flex";
+@import "aboutus"; //一分钟了解爱财
+
+$co-ec: #ec4d43;
+$co-22: #222222;
+$co-f3: #f39026;
+$co-ff: #fff6e4;
+$co-99: #999999;
+
+.wrap {
+  position: relative;
+  width: px2rem(640px);
+  margin: 0 auto;
+  .bg-guid {
+    display: block;
+    width: px2rem(640px);
+  }
+  .tel-guid {
+    position: absolute;
+    top: px2rem(290px);
+    left: px2rem(75px);
+    width: px2rem(490px);
+    @include font-dpr(14px);
+    color: #333;
+    padding: px2rem(17px) px2rem(40px);
+    border-radius: px2rem(40px);
+    &:focus {
+      border-color: $co-1;
+      box-shadow: inset 0 0 5px $co-1;
+    }
+  }
+  .tel-tip {
+    position: absolute;
+    top: px2rem(360px);
+    left: px2rem(80px);
+    width: px2rem(490px);
+    padding-left: px2rem(34);
+    @include font-dpr(14px);
+    color: $co-1;
+  }
+  .btn-check {
+    position: absolute;
+    top: px2rem(450px);
+    left: 50%;
+    margin-left: -(px2rem(185px)/2);
+    width: px2rem(185px);
+    height: px2rem(193px);
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+  }
+  .rpcompany{
+    text-align: center;
+    color: #3e5372;
+    @include font-dpr(14px);
+  }
+  .igcompany{
+    @include font-dpr(12px);
+    color: $co-4;
+    margin-bottom: px2rem(20);
+  }
+  .anm-rot {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .img-rp-header {
+    width: px2rem(640);
+  }
+  .btn-continue {
+    display: block;
+    width: px2rem(530);
+    height: px2rem(88);
+    line-height: px2rem(88);
+    margin: px2rem(50) auto;
+    @include font-dpr(17px);
+    color: $co-3;
+    text-align: center;
+    background-color: $co-2;
+    border-radius: px2rem(60);
+  }
+  .intro-guid {
+    width: px2rem(600);
+    margin: 0 auto;
+    .igh {
+      padding-left: px2rem(10);
+      @include font-dpr(13px);
+      font-weight: bold;
+      color: $co-4;
+      border-left: px2rem(5) solid $co-4;
+      margin-bottom: px2rem(12);
+    }
+    .igp {
+      @include font-dpr(13px);
+      color: $co-4;
+      margin: px2rem(10) auto;
+    }
+    .mb-igp {
+
+    }
+  }
+
+  //  新增渠道引导页面
+  .arb-img {
+    width: px2rem(640);
+  }
+
+  .arb-wrap {
+    padding: px2rem(20) px2rem(20) px2rem(100) px2rem(20);
+  }
+  .arb-intro {
+    padding: px2rem(30) 0;
+    background-color: white;
+  }
+  .arb-intro > .col-xs-4 {
+    height: px2rem(90);
+    text-align: center;
+    border-right: 1px dashed #333;
+  }
+  .arb-intro > .col-xs-4:last-child {
+    border-right: none;
+  }
+  .aip1 {
+    @include font-dpr(24px);
+    color: $co-ec;
+  }
+  .aip2 {
+    @include font-dpr(12px);
+    color: $co-22;
+  }
+  .aip3 {
+    @include font-dpr(12px);
+    color: $co-22;
+  }
+  .fz-1 {
+    @include font-dpr(24px);
+  }
+  .aip4 {
+  }
+  .btn-arb-1 {
+    display: block;
+    margin: 0 auto;
+    width: px2rem(180);
+    height: px2rem(60);
+    line-height: px2rem(60);
+    @include font-dpr(14px);
+    color: white;
+    background-color: $co-ec;
+    border-radius: px2rem(35);
+  }
+  .arb-movie {
+    padding: px2rem(20);
+    background-color: $co-ff;
+    color: $co-f3;
+    @include font-dpr(12px);
+  }
+  .am-img {
+    float: left;
+    width: px2rem(55);
+    margin-right: px2rem(20);
+  }
+  .arb-sec {
+    position: relative;
+    margin-top: px2rem(30);
+    background-color: white;
+    padding: px2rem(30) px2rem(178) px2rem(30) px2rem(20);
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -(px2rem(5));
+      width: 100%;
+      height: px2rem(6);
+      background: url("../images/ic-jag.png") repeat-x;
+    }
+  }
+  .aip1 {
+
+  }
+  .aip4 {
+    @include font-dpr(14px);
+    color: $co-22;
+  }
+  .aip5 {
+    @include font-dpr(12px);
+    color: $co-99;
+  }
+  .btn-as-r {
+    position: absolute;
+    top: px2rem(70);
+    right: px2rem(18);
+    width: px2rem(160);
+    height: px2rem(60);
+    line-height: px2rem(60);
+    @include font-dpr(14px);
+    color: white;
+    text-align: center;
+    background-color: $co-ec;
+    border-radius: px2rem(35);
+  }
+  .ban-fix-foot {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: px2rem(100);
+    line-height: px2rem(100);
+    background-color: rgba(255,204,52,.9);
+  }
+  .img-ff {
+    float: left;
+    width: px2rem(299);
+    margin-top: px2rem(30);
+    margin-left: px2rem(60);
+  }
+  .btn-as-ff {
+    float: right;
+    margin-top: px2rem(25);
+    margin-right: px2rem(45);
+    width: px2rem(160);
+    height: px2rem(55);
+    line-height: px2rem(55);
+    @include font-dpr(12px);
+    text-align: center;
+    color: white;
+    background-color: $co-ec;
+    border-radius: px2rem(10);
+  }
+}
+
+.reg-sp {
+  padding: 0 px2rem(34);
+  .reg-sp-input {
+    display: block;
+    width: 100%;
+    @include font-dpr(14px);
+    color: #d8b96e;
+    height: px2rem(80);
+    line-height: px2rem(80);
+    padding-left: px2rem(46);
+    background: white;
+    border: 1px solid #d8b96e;
+    border-radius: px2rem(50);
+
+  }
+
+  .reg-sp-control {
+    position: relative;
+    margin: 0 auto px2rem(24);
+  }
+
+  .reg-sp-input::-moz-placeholder {
+    color: #d8b96e;
+  }
+
+  .reg-sp-input::-webkit-input-placeholder {
+    color: #d8b96e;
+  }
+
+  .reg-sp-input:-ms-input-placeholder {
+    color: #d8b96e;
+  }
+
+  .code-control {
+    position: absolute;
+    right: px2rem(10);
+    top: px2rem(10);
+    width: px2rem(200);
+    height: px2rem(60);
+    line-height: px2rem(60);
+    text-align: center;
+    border-radius: px2rem(50);
+    cursor: default;
+  }
+
+  .sendCode {
+    background-color: #fdc232;
+    color: white;
+    @include font-dpr(12px);
+  }
+
+  .tip-sp {
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    padding-left: 25px;
+    color: #d6272b;
+  }
+
+  .btn-sp-reg {
+    background-color: #e73c4c;
+    border-color: #e73c4c;
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    cursor: pointer;
+    @include font-dpr(17px);
+  }
+
+  .errTip {
+    text-align: center;
+    height: px2rem(44);
+    line-height: px2rem(44);
+    color: #e73c4c;
+  }
+
+  .mb-rp {
+    margin-bottom: 0;
+  }
+  .bg-tpt {
+    color: #7f601a;
+    background: transparent;
+  }
+}
+
+

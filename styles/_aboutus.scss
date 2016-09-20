@@ -1,0 +1,51 @@
+.abtus {
+  text-align: center;
+  color: $co-4;
+  .absh {
+    padding: 0 px2rem(10);
+    height:px2rem(58);
+    line-height: px2rem(58);
+    @include font-dpr(17px);
+    font-weight: bold;
+    background-color: $co-3;
+    .ic-absh{
+      width: px2rem(45);
+      vertical-align: middle;
+    }
+  }
+  .absul {
+    margin-top: -(px2rem(58)/2);
+    padding: px2rem(50) 0;
+    text-align: left;
+    border: 1px solid $co-4;
+    li {
+      display: table;
+      width: 100%;
+      //padding-left: px2rem(150);
+    }
+    .cell-l,.cell-r{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .cell-l{
+      width: px2rem(150);
+      padding-left: px2rem(30);
+    }
+    .cell-r{
+    }
+    .absimg {
+      //position: absolute;
+      //left: px2rem(30);
+      //display: table-cell;
+      width: px2rem(92);
+      height: px2rem(92);
+    }
+    .alih {
+      @include font-dpr(14px);
+      font-weight: bold;
+    }
+    .alip {
+      @include font-dpr(14px);
+    }
+  }
+}
