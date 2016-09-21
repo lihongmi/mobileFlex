@@ -326,24 +326,6 @@ img {
     -ms-transition: transform .5s;
     -o-transition: transform .5s;
     transition: transform .5s; }
-  .wrap .rpcompany {
-    text-align: center;
-    color: #3e5372;
-    font-size: 14px;
-    max-height: 100%; }
-    [data-dpr="2"] .wrap .rpcompany {
-      font-size: 28px; }
-    [data-dpr="3"] .wrap .rpcompany {
-      font-size: 42px; }
-  .wrap .igcompany {
-    font-size: 12px;
-    max-height: 100%;
-    color: #7f601a;
-    margin-bottom: 0.3125rem; }
-    [data-dpr="2"] .wrap .igcompany {
-      font-size: 24px; }
-    [data-dpr="3"] .wrap .igcompany {
-      font-size: 36px; }
   .wrap .anm-rot {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -387,7 +369,7 @@ img {
       font-size: 13px;
       max-height: 100%;
       color: #7f601a;
-      margin: 0.15625rem auto; }
+      margin-bottom: 0.1875rem; }
       [data-dpr="2"] .wrap .intro-guid .igp {
         font-size: 26px; }
       [data-dpr="3"] .wrap .intro-guid .igp {
@@ -477,7 +459,7 @@ img {
       bottom: -0.07813rem;
       width: 100%;
       height: 0.09375rem;
-      background: url("../images/ic-jag.png") repeat-x; }
+      background: url("/assets/special/images/guid/ic-jag.png") repeat-x; }
   .wrap .aip4 {
     font-size: 14px;
     max-height: 100%;
@@ -543,6 +525,7 @@ img {
       font-size: 36px; }
 
 .reg-sp {
+  margin-top: -4.6875rem;
   padding: 0 0.53125rem; }
   .reg-sp .reg-sp-input {
     display: block;
@@ -595,8 +578,8 @@ img {
     padding-left: 25px;
     color: #d6272b; }
   .reg-sp .btn-sp-reg {
-    background-color: #e73c4c;
-    border-color: #e73c4c;
+    background-color: #00bed6;
+    border-color: #00bed6;
     color: white;
     text-align: center;
     padding-left: 0;
@@ -618,4 +601,4 @@ img {
     color: #7f601a;
     background: transparent; }
 
-/*# sourceMappingURL=guidrp.css.map */
+/*# sourceMappingURL=dadareg.css.map */
